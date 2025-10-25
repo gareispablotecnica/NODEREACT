@@ -11,7 +11,7 @@ const db_crear = new SQLite3.Database(SQLite3_Ubicacion, (Error) => {
     } else {
         console.log('Se Creo Correctamente la Base de Datos✔')
 
-        db_crear.run(`CREATE TABLE IF NOT EXISTS usuarios(
+        db_crear.run(`CREATE TABLE IF NOT EXISTS Usuarios(
             ID INTEGER PRIMARY KEY AUTOINCREMENT,
             User TEXT UNIQUE,
             Password TEXT,

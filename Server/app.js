@@ -16,11 +16,14 @@ require('dotenv').config();
 // ---> Puerto de Conexion
 const PORT=process.env.PORT || 5000;
 
+App.use(Express.json());
+const cors= require('cors')
+App.use(cors())
 
 const Router= require('./src/Router/Login.Router')
 App.use('/api', Router);
 
-App.use(Express.json());
+
 
 
 
